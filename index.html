@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="kk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>9Ә · Геометрия · Үй жұмысы</title><style>
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Roboto,Arial,sans-serif;background:#eef3fa;color:#0f172a}
+header{background:linear-gradient(90deg,#1e3a8a,#2563eb);color:#fff;padding:16px 22px}
+header h1{margin:0;font-size:22px}
+header p{margin:4px 0 0;font-size:14px;opacity:.92}
+.badge{display:inline-block;margin-top:8px;background:#fde68a;color:#78350f;font-weight:600;font-size:13px;padding:3px 10px;border-radius:12px}
+.wrap{display:flex;min-height:calc(100vh - 90px)}
+nav{width:250px;flex-shrink:0;background:#fff;border-right:1px solid #dbe4f0;padding:14px 10px}
+nav h2{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#64748b;margin:4px 8px 10px}
+nav button{display:block;width:100%;text-align:left;border:1px solid transparent;background:none;border-radius:10px;padding:10px 12px;margin-bottom:6px;cursor:pointer;font:inherit;color:inherit}
+nav button:hover{background:#f1f5ff}
+nav button.active{background:#dbeafe;border-color:#93c5fd}
+nav .d{font-weight:700;font-size:16px}
+nav .w{font-size:12px;color:#64748b}
+nav .t{font-size:12.5px;color:#334155;margin-top:3px;line-height:1.3}
+main{flex:1;padding:22px;max-width:980px}
+.card{background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(15,23,42,.07);padding:22px}
+.meta{color:#64748b;font-size:14px}
+.card h3{margin:6px 0 14px;font-size:21px;color:#1e3a8a}
+.label{display:inline-block;background:#1d4ed8;color:#fff;border-radius:8px;padding:3px 10px;font-weight:600;font-size:14px;margin-bottom:10px}
+.task{font-size:17px;line-height:1.6}
+.fig{display:block;width:100%;max-width:640px;height:auto;margin:16px auto 4px}
+.fig .num{font-size:12px;fill:#334155}
+.fig .ax{font-size:14px;font-style:italic;fill:#334155}
+.fig .pl{font-size:15px;font-weight:700;font-style:italic}
+.cap{text-align:center;color:#64748b;font-size:13px}
+.sol{margin-top:18px;border-left:4px solid #16a34a;background:#f0fdf4;border-radius:8px;padding:12px 16px}
+.sol h4{margin:0 0 6px;color:#15803d}
+.sol ol{margin:0;padding-left:20px;line-height:1.6}
+.ans{margin-top:10px;font-weight:700;color:#14532d}
+footer{text-align:center;color:#94a3b8;font-size:12px;padding:14px}
+@media(max-width:760px){.wrap{flex-direction:column}nav{width:100%;display:flex;gap:6px;overflow-x:auto;border-right:none;border-bottom:1px solid #dbe4f0}
+nav h2{display:none}nav button{min-width:170px;margin:0}main{padding:12px}.card{padding:16px}}
+</style></head>
+<body><header><h1>Үй жұмысы · 9Ә сынып · Геометрия</h1>
+<p>Математика пәнінің мұғалімі – Кунгозин Даулет Багдашевич</p></header>
+<div class="wrap"><nav><h2>Күндер</h2><button data-i="0" data-date="18.11.2026"><div class="d">18.11</div><div class="w">Сәрсенбі</div><div class="t">Гомотетия және оның қасиеттері</div></button><button data-i="1" data-date="20.11.2026"><div class="d">20.11</div><div class="w">Жұма</div><div class="t">Ұқсас фигуралар және олардың қасиеттері</div></button><button data-i="2" data-date="25.11.2026"><div class="d">25.11</div><div class="w">Сәрсенбі</div><div class="t">Үшбұрыштар ұқсастығының белгілері</div></button><button data-i="3" data-date="27.11.2026"><div class="d">27.11</div><div class="w">Жұма</div><div class="t">Үшбұрыштар ұқсастығының белгілері</div></button></nav><main><section class="card" id="s0" hidden><div class="meta">18.11.2026 · Сәрсенбі · 9Ә сынып, геометрия</div><h3>Гомотетия және оның қасиеттері</h3><div class="label">1-тапсырма</div><div class="task">Координаталық жазықтықта A(1; 1), B(3; 1), C(1; 3) нүктелері берілген. ABC үшбұрышын центрі O(0; 0) нүктесі, коэффициенті k = 2 болатын гомотетия арқылы A₁B₁C₁ үшбұрышына бейнелеңдер: A₁, B₁, C₁ нүктелерінің координаталарын тауып, A₁B₁C₁ үшбұрышын дәптерге тор көзді координаталық жазықтықта салыңдар және A₁B₁ қабырғасы AB қабырғасынан неше есе ұзын екенін анықтаңдар.</div><svg viewBox="0 0 332 324" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ABC үшбұрышы" class="fig">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#334155"/></marker></defs>
+<rect x="34" y="22" width="272" height="272" fill="#fff"/>
+<line x1="34" y1="294" x2="34" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="68" y1="294" x2="68" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="102" y1="294" x2="102" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="136" y1="294" x2="136" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="170" y1="294" x2="170" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="204" y1="294" x2="204" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="238" y1="294" x2="238" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="272" y1="294" x2="272" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="306" y1="294" x2="306" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="294" x2="306" y2="294" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="260" x2="306" y2="260" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="226" x2="306" y2="226" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="192" x2="306" y2="192" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="158" x2="306" y2="158" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="124" x2="306" y2="124" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="90" x2="306" y2="90" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="56" x2="306" y2="56" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="22" x2="306" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="294" x2="324" y2="294" stroke="#334155" stroke-width="1.8" marker-end="url(#ar)"/>
+<line x1="34" y1="294" x2="34" y2="6" stroke="#334155" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="320" y="312" class="ax">x</text>
+<text x="44" y="16" class="ax">y</text>
+<text x="21" y="311" class="num">O</text>
+<line x1="68" y1="291" x2="68" y2="297" stroke="#334155"/>
+<text x="68" y="311" text-anchor="middle" class="num">1</text>
+<line x1="102" y1="291" x2="102" y2="297" stroke="#334155"/>
+<text x="102" y="311" text-anchor="middle" class="num">2</text>
+<line x1="136" y1="291" x2="136" y2="297" stroke="#334155"/>
+<text x="136" y="311" text-anchor="middle" class="num">3</text>
+<line x1="170" y1="291" x2="170" y2="297" stroke="#334155"/>
+<text x="170" y="311" text-anchor="middle" class="num">4</text>
+<line x1="204" y1="291" x2="204" y2="297" stroke="#334155"/>
+<text x="204" y="311" text-anchor="middle" class="num">5</text>
+<line x1="238" y1="291" x2="238" y2="297" stroke="#334155"/>
+<text x="238" y="311" text-anchor="middle" class="num">6</text>
+<line x1="272" y1="291" x2="272" y2="297" stroke="#334155"/>
+<text x="272" y="311" text-anchor="middle" class="num">7</text>
+<line x1="306" y1="291" x2="306" y2="297" stroke="#334155"/>
+<text x="306" y="311" text-anchor="middle" class="num">8</text>
+<line x1="31" y1="260" x2="37" y2="260" stroke="#334155"/>
+<text x="27" y="264" text-anchor="end" class="num">1</text>
+<line x1="31" y1="226" x2="37" y2="226" stroke="#334155"/>
+<text x="27" y="230" text-anchor="end" class="num">2</text>
+<line x1="31" y1="192" x2="37" y2="192" stroke="#334155"/>
+<text x="27" y="196" text-anchor="end" class="num">3</text>
+<line x1="31" y1="158" x2="37" y2="158" stroke="#334155"/>
+<text x="27" y="162" text-anchor="end" class="num">4</text>
+<line x1="31" y1="124" x2="37" y2="124" stroke="#334155"/>
+<text x="27" y="128" text-anchor="end" class="num">5</text>
+<line x1="31" y1="90" x2="37" y2="90" stroke="#334155"/>
+<text x="27" y="94" text-anchor="end" class="num">6</text>
+<line x1="31" y1="56" x2="37" y2="56" stroke="#334155"/>
+<text x="27" y="60" text-anchor="end" class="num">7</text>
+<line x1="31" y1="22" x2="37" y2="22" stroke="#334155"/>
+<text x="27" y="26" text-anchor="end" class="num">8</text>
+<polygon points="68,260 136,260 68,192" fill="rgba(29,78,216,.12)" stroke="#1d4ed8" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="68" cy="260" r="3.6" fill="#1d4ed8"/>
+<text x="52" y="276" class="pl" fill="#1d4ed8">A</text>
+<circle cx="136" cy="260" r="3.6" fill="#1d4ed8"/>
+<text x="140" y="276" class="pl" fill="#1d4ed8">B</text>
+<circle cx="68" cy="192" r="3.6" fill="#1d4ed8"/>
+<text x="52" y="188" class="pl" fill="#1d4ed8">C</text>
+<circle cx="34" cy="294" r="3.6" fill="#334155"/>
+<text x="34" y="294" class="pl" fill="#334155"></text>
+</svg><div class="cap">Масштаб: тор көзінің қабырғасы — 1 бірлік (1 см)</div></section><section class="card" id="s1" hidden><div class="meta">20.11.2026 · Жұма · 9Ә сынып, геометрия</div><h3>Ұқсас фигуралар және олардың қасиеттері</h3><div class="label">1-тапсырма</div><div class="task">Суретте ABCD және A₁B₁C₁D₁ тіктөртбұрыштары берілген (тор көзінің қабырғасы 1 см). Тіктөртбұрыштардың қабырғаларының ұзындықтарын анықтап, олардың ұқсас екенін дәлелдеңдер, ұқсастық коэффициентін, периметрлерінің қатынасын және аудандарының қатынасын табыңдар.</div><svg viewBox="0 0 570 426" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ABCD және A₁B₁C₁D₁ тіктөртбұрыштары" class="fig">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#334155"/></marker></defs>
+<rect x="34" y="22" width="510" height="374" fill="#fff"/>
+<line x1="34" y1="396" x2="34" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="68" y1="396" x2="68" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="102" y1="396" x2="102" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="136" y1="396" x2="136" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="170" y1="396" x2="170" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="204" y1="396" x2="204" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="238" y1="396" x2="238" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="272" y1="396" x2="272" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="306" y1="396" x2="306" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="340" y1="396" x2="340" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="374" y1="396" x2="374" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="408" y1="396" x2="408" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="442" y1="396" x2="442" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="476" y1="396" x2="476" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="510" y1="396" x2="510" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="544" y1="396" x2="544" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="396" x2="544" y2="396" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="362" x2="544" y2="362" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="328" x2="544" y2="328" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="294" x2="544" y2="294" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="260" x2="544" y2="260" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="226" x2="544" y2="226" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="192" x2="544" y2="192" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="158" x2="544" y2="158" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="124" x2="544" y2="124" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="90" x2="544" y2="90" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="56" x2="544" y2="56" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="22" x2="544" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="396" x2="562" y2="396" stroke="#334155" stroke-width="1.8" marker-end="url(#ar)"/>
+<line x1="34" y1="396" x2="34" y2="6" stroke="#334155" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="558" y="414" class="ax">x</text>
+<text x="44" y="16" class="ax">y</text>
+<text x="21" y="413" class="num">O</text>
+<line x1="68" y1="393" x2="68" y2="399" stroke="#334155"/>
+<text x="68" y="413" text-anchor="middle" class="num">1</text>
+<line x1="102" y1="393" x2="102" y2="399" stroke="#334155"/>
+<text x="102" y="413" text-anchor="middle" class="num">2</text>
+<line x1="136" y1="393" x2="136" y2="399" stroke="#334155"/>
+<text x="136" y="413" text-anchor="middle" class="num">3</text>
+<line x1="170" y1="393" x2="170" y2="399" stroke="#334155"/>
+<text x="170" y="413" text-anchor="middle" class="num">4</text>
+<line x1="204" y1="393" x2="204" y2="399" stroke="#334155"/>
+<text x="204" y="413" text-anchor="middle" class="num">5</text>
+<line x1="238" y1="393" x2="238" y2="399" stroke="#334155"/>
+<text x="238" y="413" text-anchor="middle" class="num">6</text>
+<line x1="272" y1="393" x2="272" y2="399" stroke="#334155"/>
+<text x="272" y="413" text-anchor="middle" class="num">7</text>
+<line x1="306" y1="393" x2="306" y2="399" stroke="#334155"/>
+<text x="306" y="413" text-anchor="middle" class="num">8</text>
+<line x1="340" y1="393" x2="340" y2="399" stroke="#334155"/>
+<text x="340" y="413" text-anchor="middle" class="num">9</text>
+<line x1="374" y1="393" x2="374" y2="399" stroke="#334155"/>
+<text x="374" y="413" text-anchor="middle" class="num">10</text>
+<line x1="408" y1="393" x2="408" y2="399" stroke="#334155"/>
+<text x="408" y="413" text-anchor="middle" class="num">11</text>
+<line x1="442" y1="393" x2="442" y2="399" stroke="#334155"/>
+<text x="442" y="413" text-anchor="middle" class="num">12</text>
+<line x1="476" y1="393" x2="476" y2="399" stroke="#334155"/>
+<text x="476" y="413" text-anchor="middle" class="num">13</text>
+<line x1="510" y1="393" x2="510" y2="399" stroke="#334155"/>
+<text x="510" y="413" text-anchor="middle" class="num">14</text>
+<line x1="544" y1="393" x2="544" y2="399" stroke="#334155"/>
+<text x="544" y="413" text-anchor="middle" class="num">15</text>
+<line x1="31" y1="362" x2="37" y2="362" stroke="#334155"/>
+<text x="27" y="366" text-anchor="end" class="num">1</text>
+<line x1="31" y1="328" x2="37" y2="328" stroke="#334155"/>
+<text x="27" y="332" text-anchor="end" class="num">2</text>
+<line x1="31" y1="294" x2="37" y2="294" stroke="#334155"/>
+<text x="27" y="298" text-anchor="end" class="num">3</text>
+<line x1="31" y1="260" x2="37" y2="260" stroke="#334155"/>
+<text x="27" y="264" text-anchor="end" class="num">4</text>
+<line x1="31" y1="226" x2="37" y2="226" stroke="#334155"/>
+<text x="27" y="230" text-anchor="end" class="num">5</text>
+<line x1="31" y1="192" x2="37" y2="192" stroke="#334155"/>
+<text x="27" y="196" text-anchor="end" class="num">6</text>
+<line x1="31" y1="158" x2="37" y2="158" stroke="#334155"/>
+<text x="27" y="162" text-anchor="end" class="num">7</text>
+<line x1="31" y1="124" x2="37" y2="124" stroke="#334155"/>
+<text x="27" y="128" text-anchor="end" class="num">8</text>
+<line x1="31" y1="90" x2="37" y2="90" stroke="#334155"/>
+<text x="27" y="94" text-anchor="end" class="num">9</text>
+<line x1="31" y1="56" x2="37" y2="56" stroke="#334155"/>
+<text x="27" y="60" text-anchor="end" class="num">10</text>
+<line x1="31" y1="22" x2="37" y2="22" stroke="#334155"/>
+<text x="27" y="26" text-anchor="end" class="num">11</text>
+<polygon points="68,362 204,362 204,158 68,158" fill="rgba(29,78,216,.10)" stroke="#1d4ed8" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="306,362 510,362 510,56 306,56" fill="rgba(4,120,87,.10)" stroke="#047857" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="68" cy="362" r="3.6" fill="#1d4ed8"/>
+<text x="53" y="378" class="pl" fill="#1d4ed8">A</text>
+<circle cx="204" cy="362" r="3.6" fill="#1d4ed8"/>
+<text x="208" y="378" class="pl" fill="#1d4ed8">B</text>
+<circle cx="204" cy="158" r="3.6" fill="#1d4ed8"/>
+<text x="209" y="153" class="pl" fill="#1d4ed8">C</text>
+<circle cx="68" cy="158" r="3.6" fill="#1d4ed8"/>
+<text x="53" y="153" class="pl" fill="#1d4ed8">D</text>
+<circle cx="306" cy="362" r="3.6" fill="#047857"/>
+<text x="286" y="378" class="pl" fill="#047857">A₁</text>
+<circle cx="510" cy="362" r="3.6" fill="#047857"/>
+<text x="514" y="378" class="pl" fill="#047857">B₁</text>
+<circle cx="510" cy="56" r="3.6" fill="#047857"/>
+<text x="515" y="51" class="pl" fill="#047857">C₁</text>
+<circle cx="306" cy="56" r="3.6" fill="#047857"/>
+<text x="284" y="51" class="pl" fill="#047857">D₁</text>
+</svg><div class="cap">Масштаб: тор көзінің қабырғасы — 1 бірлік (1 см)</div></section><section class="card" id="s2" hidden><div class="meta">25.11.2026 · Сәрсенбі · 9Ә сынып, геометрия</div><h3>Үшбұрыштар ұқсастығының белгілері</h3><div class="label">1-тапсырма</div><div class="task">ABC үшбұрышының AB қабырғасынан D нүктесі, BC қабырғасынан E нүктесі DE ∥ AC болатындай етіп алынған (тор көзінің қабырғасы 1 см). AB = 10 см, BD = 4 см, AC = 15 см. DBE және ABC үшбұрыштарының ұқсас екенін дәлелдеп, DE кесіндісінің ұзындығын табыңдар.</div><svg viewBox="0 0 604 358" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ABC үшбұрышы, DE ∥ AC" class="fig">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#334155"/></marker></defs>
+<rect x="34" y="22" width="544" height="306" fill="#fff"/>
+<line x1="34" y1="328" x2="34" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="68" y1="328" x2="68" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="102" y1="328" x2="102" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="136" y1="328" x2="136" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="170" y1="328" x2="170" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="204" y1="328" x2="204" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="238" y1="328" x2="238" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="272" y1="328" x2="272" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="306" y1="328" x2="306" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="340" y1="328" x2="340" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="374" y1="328" x2="374" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="408" y1="328" x2="408" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="442" y1="328" x2="442" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="476" y1="328" x2="476" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="510" y1="328" x2="510" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="544" y1="328" x2="544" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="578" y1="328" x2="578" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="328" x2="578" y2="328" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="294" x2="578" y2="294" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="260" x2="578" y2="260" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="226" x2="578" y2="226" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="192" x2="578" y2="192" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="158" x2="578" y2="158" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="124" x2="578" y2="124" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="90" x2="578" y2="90" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="56" x2="578" y2="56" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="22" x2="578" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="328" x2="596" y2="328" stroke="#334155" stroke-width="1.8" marker-end="url(#ar)"/>
+<line x1="34" y1="328" x2="34" y2="6" stroke="#334155" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="592" y="346" class="ax">x</text>
+<text x="44" y="16" class="ax">y</text>
+<text x="21" y="345" class="num">O</text>
+<line x1="68" y1="325" x2="68" y2="331" stroke="#334155"/>
+<text x="68" y="345" text-anchor="middle" class="num">1</text>
+<line x1="102" y1="325" x2="102" y2="331" stroke="#334155"/>
+<text x="102" y="345" text-anchor="middle" class="num">2</text>
+<line x1="136" y1="325" x2="136" y2="331" stroke="#334155"/>
+<text x="136" y="345" text-anchor="middle" class="num">3</text>
+<line x1="170" y1="325" x2="170" y2="331" stroke="#334155"/>
+<text x="170" y="345" text-anchor="middle" class="num">4</text>
+<line x1="204" y1="325" x2="204" y2="331" stroke="#334155"/>
+<text x="204" y="345" text-anchor="middle" class="num">5</text>
+<line x1="238" y1="325" x2="238" y2="331" stroke="#334155"/>
+<text x="238" y="345" text-anchor="middle" class="num">6</text>
+<line x1="272" y1="325" x2="272" y2="331" stroke="#334155"/>
+<text x="272" y="345" text-anchor="middle" class="num">7</text>
+<line x1="306" y1="325" x2="306" y2="331" stroke="#334155"/>
+<text x="306" y="345" text-anchor="middle" class="num">8</text>
+<line x1="340" y1="325" x2="340" y2="331" stroke="#334155"/>
+<text x="340" y="345" text-anchor="middle" class="num">9</text>
+<line x1="374" y1="325" x2="374" y2="331" stroke="#334155"/>
+<text x="374" y="345" text-anchor="middle" class="num">10</text>
+<line x1="408" y1="325" x2="408" y2="331" stroke="#334155"/>
+<text x="408" y="345" text-anchor="middle" class="num">11</text>
+<line x1="442" y1="325" x2="442" y2="331" stroke="#334155"/>
+<text x="442" y="345" text-anchor="middle" class="num">12</text>
+<line x1="476" y1="325" x2="476" y2="331" stroke="#334155"/>
+<text x="476" y="345" text-anchor="middle" class="num">13</text>
+<line x1="510" y1="325" x2="510" y2="331" stroke="#334155"/>
+<text x="510" y="345" text-anchor="middle" class="num">14</text>
+<line x1="544" y1="325" x2="544" y2="331" stroke="#334155"/>
+<text x="544" y="345" text-anchor="middle" class="num">15</text>
+<line x1="578" y1="325" x2="578" y2="331" stroke="#334155"/>
+<text x="578" y="345" text-anchor="middle" class="num">16</text>
+<line x1="31" y1="294" x2="37" y2="294" stroke="#334155"/>
+<text x="27" y="298" text-anchor="end" class="num">1</text>
+<line x1="31" y1="260" x2="37" y2="260" stroke="#334155"/>
+<text x="27" y="264" text-anchor="end" class="num">2</text>
+<line x1="31" y1="226" x2="37" y2="226" stroke="#334155"/>
+<text x="27" y="230" text-anchor="end" class="num">3</text>
+<line x1="31" y1="192" x2="37" y2="192" stroke="#334155"/>
+<text x="27" y="196" text-anchor="end" class="num">4</text>
+<line x1="31" y1="158" x2="37" y2="158" stroke="#334155"/>
+<text x="27" y="162" text-anchor="end" class="num">5</text>
+<line x1="31" y1="124" x2="37" y2="124" stroke="#334155"/>
+<text x="27" y="128" text-anchor="end" class="num">6</text>
+<line x1="31" y1="90" x2="37" y2="90" stroke="#334155"/>
+<text x="27" y="94" text-anchor="end" class="num">7</text>
+<line x1="31" y1="56" x2="37" y2="56" stroke="#334155"/>
+<text x="27" y="60" text-anchor="end" class="num">8</text>
+<line x1="31" y1="22" x2="37" y2="22" stroke="#334155"/>
+<text x="27" y="26" text-anchor="end" class="num">9</text>
+<polygon points="34,328 238,56 544,328" fill="rgba(29,78,216,.08)" stroke="#1d4ed8" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="156.4,164.8 238,56 360.4,164.8" fill="rgba(180,83,9,.14)" stroke="#b45309" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="34" cy="328" r="3.6" fill="#1d4ed8"/>
+<text x="38" y="318" class="pl" fill="#1d4ed8">A</text>
+<circle cx="238" cy="56" r="3.6" fill="#1d4ed8"/>
+<text x="233" y="47" class="pl" fill="#1d4ed8">B</text>
+<circle cx="544" cy="328" r="3.6" fill="#1d4ed8"/>
+<text x="548" y="320" class="pl" fill="#1d4ed8">C</text>
+<circle cx="156.4" cy="164.8" r="3.6" fill="#b45309"/>
+<text x="138.4" y="166.8" class="pl" fill="#b45309">D</text>
+<circle cx="360.4" cy="164.8" r="3.6" fill="#b45309"/>
+<text x="367.4" y="166.8" class="pl" fill="#b45309">E</text>
+</svg><div class="cap">Масштаб: тор көзінің қабырғасы — 1 бірлік (1 см)</div></section><section class="card" id="s3" hidden><div class="meta">27.11.2026 · Жұма · 9Ә сынып, геометрия</div><h3>Үшбұрыштар ұқсастығының белгілері</h3><div class="label">1-тапсырма</div><div class="task">Координаталық жазықтықта A(1; 1), B(4; 1), C(1; 5) және M(7; 1), N(13; 1), K(7; 9) нүктелері берілген. ABC және MNK үшбұрыштарының қабырғаларының ұзындықтарын тауып, олардың ұқсас екенін дәлелдеңдер және ұқсастық коэффициентін табыңдар.</div><svg viewBox="0 0 536 392" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ABC және MNK үшбұрыштары" class="fig">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#334155"/></marker></defs>
+<rect x="34" y="22" width="476" height="340" fill="#fff"/>
+<line x1="34" y1="362" x2="34" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="68" y1="362" x2="68" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="102" y1="362" x2="102" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="136" y1="362" x2="136" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="170" y1="362" x2="170" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="204" y1="362" x2="204" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="238" y1="362" x2="238" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="272" y1="362" x2="272" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="306" y1="362" x2="306" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="340" y1="362" x2="340" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="374" y1="362" x2="374" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="408" y1="362" x2="408" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="442" y1="362" x2="442" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="476" y1="362" x2="476" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="510" y1="362" x2="510" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="362" x2="510" y2="362" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="328" x2="510" y2="328" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="294" x2="510" y2="294" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="260" x2="510" y2="260" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="226" x2="510" y2="226" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="192" x2="510" y2="192" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="158" x2="510" y2="158" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="124" x2="510" y2="124" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="90" x2="510" y2="90" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="56" x2="510" y2="56" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="22" x2="510" y2="22" stroke="#cfe0f5" stroke-width="1"/>
+<line x1="34" y1="362" x2="528" y2="362" stroke="#334155" stroke-width="1.8" marker-end="url(#ar)"/>
+<line x1="34" y1="362" x2="34" y2="6" stroke="#334155" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="524" y="380" class="ax">x</text>
+<text x="44" y="16" class="ax">y</text>
+<text x="21" y="379" class="num">O</text>
+<line x1="68" y1="359" x2="68" y2="365" stroke="#334155"/>
+<text x="68" y="379" text-anchor="middle" class="num">1</text>
+<line x1="102" y1="359" x2="102" y2="365" stroke="#334155"/>
+<text x="102" y="379" text-anchor="middle" class="num">2</text>
+<line x1="136" y1="359" x2="136" y2="365" stroke="#334155"/>
+<text x="136" y="379" text-anchor="middle" class="num">3</text>
+<line x1="170" y1="359" x2="170" y2="365" stroke="#334155"/>
+<text x="170" y="379" text-anchor="middle" class="num">4</text>
+<line x1="204" y1="359" x2="204" y2="365" stroke="#334155"/>
+<text x="204" y="379" text-anchor="middle" class="num">5</text>
+<line x1="238" y1="359" x2="238" y2="365" stroke="#334155"/>
+<text x="238" y="379" text-anchor="middle" class="num">6</text>
+<line x1="272" y1="359" x2="272" y2="365" stroke="#334155"/>
+<text x="272" y="379" text-anchor="middle" class="num">7</text>
+<line x1="306" y1="359" x2="306" y2="365" stroke="#334155"/>
+<text x="306" y="379" text-anchor="middle" class="num">8</text>
+<line x1="340" y1="359" x2="340" y2="365" stroke="#334155"/>
+<text x="340" y="379" text-anchor="middle" class="num">9</text>
+<line x1="374" y1="359" x2="374" y2="365" stroke="#334155"/>
+<text x="374" y="379" text-anchor="middle" class="num">10</text>
+<line x1="408" y1="359" x2="408" y2="365" stroke="#334155"/>
+<text x="408" y="379" text-anchor="middle" class="num">11</text>
+<line x1="442" y1="359" x2="442" y2="365" stroke="#334155"/>
+<text x="442" y="379" text-anchor="middle" class="num">12</text>
+<line x1="476" y1="359" x2="476" y2="365" stroke="#334155"/>
+<text x="476" y="379" text-anchor="middle" class="num">13</text>
+<line x1="510" y1="359" x2="510" y2="365" stroke="#334155"/>
+<text x="510" y="379" text-anchor="middle" class="num">14</text>
+<line x1="31" y1="328" x2="37" y2="328" stroke="#334155"/>
+<text x="27" y="332" text-anchor="end" class="num">1</text>
+<line x1="31" y1="294" x2="37" y2="294" stroke="#334155"/>
+<text x="27" y="298" text-anchor="end" class="num">2</text>
+<line x1="31" y1="260" x2="37" y2="260" stroke="#334155"/>
+<text x="27" y="264" text-anchor="end" class="num">3</text>
+<line x1="31" y1="226" x2="37" y2="226" stroke="#334155"/>
+<text x="27" y="230" text-anchor="end" class="num">4</text>
+<line x1="31" y1="192" x2="37" y2="192" stroke="#334155"/>
+<text x="27" y="196" text-anchor="end" class="num">5</text>
+<line x1="31" y1="158" x2="37" y2="158" stroke="#334155"/>
+<text x="27" y="162" text-anchor="end" class="num">6</text>
+<line x1="31" y1="124" x2="37" y2="124" stroke="#334155"/>
+<text x="27" y="128" text-anchor="end" class="num">7</text>
+<line x1="31" y1="90" x2="37" y2="90" stroke="#334155"/>
+<text x="27" y="94" text-anchor="end" class="num">8</text>
+<line x1="31" y1="56" x2="37" y2="56" stroke="#334155"/>
+<text x="27" y="60" text-anchor="end" class="num">9</text>
+<line x1="31" y1="22" x2="37" y2="22" stroke="#334155"/>
+<text x="27" y="26" text-anchor="end" class="num">10</text>
+<polygon points="68,328 170,328 68,192" fill="rgba(29,78,216,.12)" stroke="#1d4ed8" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="272,328 476,328 272,56" fill="rgba(4,120,87,.10)" stroke="#047857" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="68" cy="328" r="3.6" fill="#1d4ed8"/>
+<text x="52" y="344" class="pl" fill="#1d4ed8">A</text>
+<circle cx="170" cy="328" r="3.6" fill="#1d4ed8"/>
+<text x="173" y="344" class="pl" fill="#1d4ed8">B</text>
+<circle cx="68" cy="192" r="3.6" fill="#1d4ed8"/>
+<text x="52" y="188" class="pl" fill="#1d4ed8">C</text>
+<circle cx="272" cy="328" r="3.6" fill="#047857"/>
+<text x="254" y="344" class="pl" fill="#047857">M</text>
+<circle cx="476" cy="328" r="3.6" fill="#047857"/>
+<text x="479" y="344" class="pl" fill="#047857">N</text>
+<circle cx="272" cy="56" r="3.6" fill="#047857"/>
+<text x="254" y="52" class="pl" fill="#047857">K</text>
+</svg><div class="cap">Масштаб: тор көзінің қабырғасы — 1 бірлік (1 см)</div></section></main></div>
+<footer>18.11.2026 – 27.11.2026 · Үй жұмысы</footer>
+<script>
+const b=[...document.querySelectorAll('nav button')],s=[...document.querySelectorAll('main section')];
+function show(i){b.forEach((x,k)=>x.classList.toggle('active',k==i));s.forEach((x,k)=>x.hidden=k!=i);location.hash=b[i].dataset.date;window.scrollTo(0,0)}
+b.forEach((x,k)=>x.onclick=()=>show(k));
+let i=b.findIndex(x=>x.dataset.date==decodeURIComponent(location.hash.slice(1)));
+if(i<0){const n=new Date();n.setHours(0,0,0,0);i=0;b.forEach((x,k)=>{const [d,m,y]=x.dataset.date.split('.');if(new Date(+y,m-1,+d)<=n)i=k})}
+show(i);
+</script></body></html>
